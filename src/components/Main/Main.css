@@ -1,0 +1,240 @@
+.slide_container {
+  z-index: 0;
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: 100vh;
+  min-height: 90vh;
+}
+
+body {
+  background-image: url("../../assets/bg-desktop.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.splide__pagination {
+  position: fixed !important;
+}
+
+.splide__pagination li {
+  background-color: #404040;
+
+  padding: 2px 2px 4px 2px;
+}
+
+.splide__pagination li:first-child {
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+}
+
+.splide__pagination li:last-child {
+  border-radius: 0 10px 10px 0;
+  padding-right: 10px;
+}
+
+.splide__pagination li button.is-active {
+  background-color: #ffffff;
+  opacity: 1;
+  transform: scale(1.6);
+}
+.splide__pagination li button:not(.is-active) {
+  opacity: 0.5;
+  transform: scale(0.7);
+}
+
+.splide__arrows {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 50%;
+}
+
+.copyright {
+  font-family: Plus Jakarta Sans;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #acacac;
+  padding-bottom: 80px;
+}
+
+.page_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  padding-bottom: 50px;
+  padding: 0px 50px 50px 50px;
+  text-align: center;
+}
+
+.splide-slide {
+  height: 85vh !important;
+}
+
+.splide-slide.is-active {
+  height: auto !important;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.navbar_container {
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(149, 149, 149, 1);
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+}
+
+.nav_logo {
+  margin: 15px;
+  width: 5%;
+  min-width: 75px;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav_items {
+  font-family: "Space Grotesk", serif;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  width: 77vw;
+  max-width: 800px;
+  gap: 20px;
+  min-width: 500px;
+  padding-right: 19px;
+  text-wrap: nowrap;
+}
+.nav_item {
+  cursor: pointer;
+  color: rgba(149, 149, 149, 1);
+  transition: 0.3s ease;
+}
+.nav_item:hover {
+  transition: 0.3s ease;
+  color: rgb(0, 0, 0);
+}
+
+.splide__arrow svg {
+  fill: rgba(211, 211, 211, 1) !important;
+  width: 2.2em;
+  height: 2.2em;
+}
+
+.splide__arrow {
+  background: none !important;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+button:active {
+  background-color: rgb(41, 41, 41);
+}
+
+.nav_item_active {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.animation {
+  max-width: 430px;
+  max-height: 430px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 880px) {
+  body {
+    background-image: url("../../assets/bg-mobile.gif");
+  }
+
+  /* Navbar styles */
+
+  .navbar_container {
+    height: 5rem;
+  }
+
+  .nav_toggle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .nav_toggle:active {
+    background-color: none;
+    color: none;
+  }
+
+  .nav_items {
+    position: fixed;
+    top: -105vh;
+    left: 0;
+    padding-top: 7.5rem;
+    padding-right: 0px;
+    font-size: 2.25rem;
+    z-index: -1;
+    height: 100%;
+    min-width: 300px;
+    max-width: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    background-color: white;
+    transition: 0.7s;
+    transform: translateY(110vh);
+  }
+
+  .nav_toggle {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+
+  .nav_logo {
+    margin: 15px;
+    width: 3rem;
+    min-width: auto;
+    height: auto;
+  }
+
+  /* Animations styles */
+
+  .animation {
+    max-width: 270px;
+    max-height: 270px;
+    width: 100%;
+    height: 100%;
+  }
+}
