@@ -1,0 +1,53 @@
+.animated-text {
+  font-family: "Roboto", sans-serif;
+  opacity: 0;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+}
+
+.animated-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animate the text with a fade in as it appears */
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.second-fade-in {
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.tools-fade-in {
+  animation: fadeIn 1.5s forwards;
+}
+
+.flow-fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+.impact-fade-in {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .animated-text {
+    font-size: 13px;
+  }
+}

@@ -5,7 +5,7 @@ import HomeAnimation from "../../assets/home-animation.gif";
 const Home = () => {
   return (
     <div className="page_container">
-      <p className="paragraph-page">Redefine the Rules of Strategy</p>
+      <h2 className="title">Redefine the Rules of Strategy</h2>
       <img
         src={HomeAnimation}
         alt="Home page Animation"

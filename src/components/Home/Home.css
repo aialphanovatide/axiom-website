@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.paragraph-page {
+.title {
   font-family: "Space Grotesk", serif;
   font-weight: 700;
   font-size: 3rem;
@@ -21,24 +21,19 @@
 
 /* Animations styles */
 
-.animation {
-  max-width: 430px;
-  max-height: 430px;
+.home-anim {
   width: 100%;
   height: 100%;
+  margin-top: -7.5%;
+  max-width: 430px;
+  max-height: 510px;
 }
 
 /* Mobile styles */
 
 @media screen and (max-width: 880px) {
-  .animation {
-    max-width: 400px;
-    max-height: 450px;
-    width: 100%;
-    height: 100%;
-  }
 
-  .paragraph-page {
+  .title {
     font-size: 2rem;
     max-width: 700px;
   }
