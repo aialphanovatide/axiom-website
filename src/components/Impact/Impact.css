@@ -1,50 +1,13 @@
 @keyframes lineAppear {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: 3em;
-    }
-  }  
-
-.page_container {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  color: white;
-  padding: 0px 50px 50px 50px;
-  text-align: center;
-}
-
-.title {
-  margin-bottom: 0.5em;
-  font-family: "Space Grotesk", serif;
-  font-weight: 700;
-  font-size: 3rem;
-  max-width: 700px;
-  color: rgb(0, 0, 0);
-}
-
-.description {
-  margin: 0.75em auto;
-  font-family: "Roboto", sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 0.9375em;
-  text-align: center;
-  font-weight: 500;
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 3em;
+  }
 }
 
 /* Animations styles */
-
-.animation {
-  max-width: 430px;
-  max-height: 480px;
-  width: 100%;
-  height: 100%;
-}
 
 .impact-animation-container {
   position: relative;
@@ -54,47 +17,59 @@
 .impact-first-text-container {
   position: absolute;
   bottom: -2.5%;
-  left: -5%;
-  width: 50%;
+  left: -2.5%;
+  width: 40%;
+}
+
+.impact-first-text-container .animated-text {
+  text-align: right;
+}
+
+.impact-second-text-container .animated-text {
+  text-align: left;
 }
 
 .impact-second-text-container {
-    position: absolute;
-    bottom: -2.5%;
-    right: -7.5%;
-    width: 50%;
+  position: absolute;
+  bottom: -2.5%;
+  right: -2.5%;
+  width: 40%;
 }
 
 .impact-third-text-container {
   width: 80%;
   position: absolute;
-  bottom: -25%;
-  right: 10%;
+  bottom: -22.5%;
+  right: 13.5%;
 }
 
 .divisor-line {
-    width: 1.5px;
-    height: 0;
-    margin: -2.5% auto;
-    background-color: #ffffff;
-    animation: lineAppear 1s ease-in-out forwards;
-  }
-
+  width: 1.5px;
+  height: 0;
+  margin: -2.5% auto;
+  background-color: #ffffff;
+  animation: lineAppear 1s ease-in-out forwards;
+}
 
 /* Mobile styles */
 
 @media screen and (max-width: 880px) {
-  .animation {
-    max-width: 400px;
-    max-height: 450px;
-    width: 100%;
-    height: 100%;
+
+  .impact-first-text-container {
+    bottom: -2.5%;
+    left: -5%;
+    width: 50%;
   }
 
-  .title {
-    font-size: 2rem;
-    max-width: 700px;
-    margin-bottom: 0;
+  .impact-second-text-container {
+    width: 50%;
+    bottom: -2.5%;
+    right: -7.5%;
   }
 
+  .impact-third-text-container {
+    width: 80%;
+    bottom: -25%;
+    right: 10%;
+  }
 }

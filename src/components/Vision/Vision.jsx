@@ -22,11 +22,11 @@ const Vision = ({ isActive }) => {
   return (
     <div className="page_container">
       <h2 className="title">Vision</h2>
-      <p className="description">
+      <p className="vision-description">
         In a world where legacy consultancies chase yesterday’s frameworks, we
         replace guesswork with precision.
       </p>
-      <div className="animation-container">
+      <div className="animation-container vision-animation-container">
         {showTexts && (
           <div className="first-text-container">
             <AnimatedText

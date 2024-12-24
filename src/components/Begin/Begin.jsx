@@ -32,8 +32,9 @@ const Begin = ({ isActive }) => {
           alt="Begin page Animation"
           className="animation begin-animation"
         />    */}
-        <div alt="Request Information Circle" className="gradients-img" />
-        <p className="begin-text">Request Information</p>
+        <div alt="Request Information Circle" className="gradients-img">
+          <p className="begin-text">Request Information</p>
+        </div>
       </div>
     </div>
   );

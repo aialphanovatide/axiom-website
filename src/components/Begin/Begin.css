@@ -1,33 +1,11 @@
-.page_container {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  color: white;
-  padding: 0px 50px 50px 50px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-
 .begin-bg {
   height: 100%;
   background-color: white;
   background-image: url("../../assets/begin-animation.gif");
   background-repeat: no-repeat;
-  background-size: 250%;
+  background-size: contain;
   background-position-x: center;
   background-origin: content-box;
-}
-
-.title {
-  margin-bottom: 0.5em;
-  font-family: "Space Grotesk", serif;
-  font-weight: 700;
-  font-size: 3rem;
-  max-width: 700px;
-  color: rgb(0, 0, 0);
 }
 
 .begin-description {
@@ -47,26 +25,25 @@
 }
 
 .gradients-img {
-  position: absolute;
-  top: -22.5%;
-  left: -7.5%;
-  width: 320px;
-  height: 320px;
+  display: flex;
+  width: 50%;
+  height: 70%;
   background-image: url("../../assets/gradients-circle.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   margin: 0 auto;
   margin-top: 2em;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 .begin-text {
-  position: absolute;
-  top: 35%;
-  left: 25%;
-  width: 50%;
+  width: 20%;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.1875em;
+  font-size: 1.4em;
   color: #000000;
   text-align: center;
 }
@@ -82,19 +59,42 @@
 /* Mobile styles */
 
 @media screen and (max-width: 880px) {
-  .title {
-    font-size: 2rem;
-    max-width: 700px;
-    margin-bottom: 0;
+  .begin-bg {
+    height: 100%;
+    background-color: white;
+    background-image: url("../../assets/begin-animation.gif");
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position-x: center;
+    background-origin: content-box;
+  }
+
+  .begin-animation {
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
   }
 
   .gradients-img {
-    top: -20%;
-    left: -10%;
-  }
-
-  .begin-text {
-    left: 22.5%;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    background-size: contain;
   }
   
+  .begin-text {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.1875em;
+  }
+
+  .begin-animation-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+  }
 }

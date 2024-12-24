@@ -1,9 +1,9 @@
 .slide_container {
   z-index: 0;
   position: relative;
-  padding-top: 30px;
+  padding-top: 3.5%;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 }
 
 .splide__pagination li {
-  background-color: #D4D4D4;
+  background-color: #D4D4D440;
   padding: 4px;
 }
 
@@ -59,7 +59,7 @@ body {
 
 .splide__arrows {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -72,17 +72,6 @@ body {
   border: none;
   cursor: pointer;
   font-size: 2rem;
-}
-
-.copyright {
-  font-family: Plus Jakarta Sans;
-  font-size: 11px;
-  font-weight: 400;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #acacac;
-  padding-bottom: 80px;
 }
 
 .page_container {
@@ -102,11 +91,11 @@ body {
 }
 
 .splide-slide.is-active {
-  height: 90vh !important;
+  height: 100% !important;
 }
 
 .navbar {
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -116,6 +105,7 @@ body {
 
 .navbar_container {
   width: 100%;
+  height: 9vh;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
@@ -123,15 +113,14 @@ body {
   justify-content: space-between;
   align-items: center;
   color: rgba(149, 149, 149, 1);
-  height: 100px;
   background-color: rgb(255, 255, 255);
   position: fixed;
 }
 
 .nav_logo {
-  margin: 15px;
-  width: 5%;
-  min-width: 75px;
+  margin: 1em;
+  width: 4%;
+  min-width: 25px;
   height: auto;
   cursor: pointer;
 }
@@ -159,6 +148,14 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.nav_item:last-child{
+  padding-right: 5em;
+}
+
+.nav_item_active:last-child{
+  padding-right: 5em;
+}
+
 .splide__arrow svg {
   fill: rgba(211, 211, 211, 1) !important;
   width: 2.2em;
@@ -183,13 +180,6 @@ button {
   cursor: pointer;
 }
 
-.animation {
-  max-width: 430px;
-  max-height: 430px;
-  width: 100%;
-  height: 100%;
-}
-
 @media (max-width: 880px) {
   body {
     background-image: url("../../assets/bg-mobile.gif");
@@ -197,7 +187,16 @@ button {
   }
 
   .slide_container {
+    margin-top: 10%;
     padding-top: 0;
+  }
+
+  .splide__pagination {
+    bottom: 15%;
+  }
+
+  .splide__pagination li {
+    background-color: #D4D4D460;
   }
 
   /* Navbar styles */
@@ -237,6 +236,14 @@ button {
     transform: translateY(110vh);
   }
 
+  .nav_item:last-child{
+    padding-right: 0;
+  }
+  
+  .nav_item_active:last-child{
+    padding-right: 0;
+  }
+
   .nav_toggle {
     display: inline-block;
     margin-right: 30px;
@@ -254,13 +261,6 @@ button {
   }
 
   /* Animations styles */
-
-  .animation {
-    max-width: 270px;
-    max-height: 350px;
-    width: 100%;
-    height: 100%;
-  }
 
   .splide__arrows {
     top: 40%;

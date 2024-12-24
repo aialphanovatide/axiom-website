@@ -1,86 +1,43 @@
-.page_container {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  color: white;
-  padding: 0px 50px 50px 50px;
+.flow-description {
+  width: 40%;
   text-align: center;
-}
-
-.title {
-  margin-bottom: 0.5em;
-  font-family: "Space Grotesk", serif;
-  font-weight: 700;
-  font-size: 3rem;
-  max-width: 700px;
-  color: rgb(0, 0, 0);
-}
-
-.description {
-  margin: 0.75em auto;
-  font-family: "Roboto", sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 0.9375em;
-  text-align: center;
-  font-weight: 500;
 }
 
 /* Animations styles */
 
-.animation {
-  max-width: 430px;
-  max-height: 480px;
-  width: 100%;
-  height: 100%;
-}
-
 .flow-animation-container {
   position: relative;
-  margin: 1rem auto;
+  margin: 2em auto;
 }
 
 .flow-first-text-container {
   position: absolute;
-  top: -10%;
-  right: 40%;
+  width: 50%;
+  top: -7.5%;
+  right: 45%;
 }
 
 .flow-first-text-container .animated-text {
-    text-align: left;
+  text-align: left;
 }
 
 .flow-second-text-container {
   width: 50%;
-  top: -12.5%;
+  top: -7.5%;
   position: absolute;
-  right: 0%;
+  right: -5%;
 }
 
 .flow-third-text-container {
-  width: 50%;
+  width: 60%;
   position: absolute;
-  bottom: -15%;
-  right: -10%;
+  bottom: -7.5%;
+  right: 17.5%;
 }
 
 /* Mobile styles */
 
 @media screen and (max-width: 880px) {
-  .animation {
-    max-width: 400px;
-    max-height: 450px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .title {
-    font-size: 2rem;
-    max-width: 700px;
-    margin-bottom: 0;
-  }
 
   .flow-animation-container {
     margin: 2.75rem auto;
