@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import VisionAnimation from "../../assets/Vision-animation.gif";
+import VisionAnimation from "../../assets/vision-animation.gif";
 import AnimatedText from "../AnimatedText/AnimatedText";
 import "./Vision.css";
 
