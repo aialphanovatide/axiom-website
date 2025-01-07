@@ -9,6 +9,7 @@
 }
 
 .begin-description {
+  width: 30%;
   margin: 0.75em auto;
   font-family: "Roboto", sans-serif;
   color: rgb(0, 0, 0);
@@ -33,7 +34,6 @@
   background-size: contain;
   background-position: center;
   margin: 0 auto;
-  margin-top: 2em;
   align-items: center;
   justify-content: center;
   justify-self: center;
@@ -73,6 +73,10 @@
     width: 1000px;
     height: 1200px;
     margin: 0 auto;
+  }
+
+  .begin-description {
+    width: 100%;
   }
 
   .gradients-img {

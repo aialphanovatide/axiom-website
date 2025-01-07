@@ -32,6 +32,8 @@ const Main = () => {
     unshowNavbar();
   };
 
+  console.log("Current index: ", currentIndex);
+
   return (
     <div>
       {/* Navbar */}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import BeginAnimation from "../../assets/begin-animation.gif";
 import GradientsCircle from "../../assets/gradients-circle.png";
 import "./Begin.css";
+import { BeginButton } from "./BeginButton/BeginButton";
 
 const Begin = ({ isActive }) => {
   const [showTexts, setShowTexts] = useState(false);
@@ -32,9 +33,10 @@ const Begin = ({ isActive }) => {
           alt="Begin page Animation"
           className="animation begin-animation"
         />    */}
-        <div alt="Request Information Circle" className="gradients-img">
+        {/* <div alt="Request Information Circle" className="gradients-img">
           <p className="begin-text">Request Information</p>
-        </div>
+        </div> */}
+        <BeginButton />
       </div>
     </div>
   );

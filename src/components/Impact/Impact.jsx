@@ -22,7 +22,7 @@ const Impact = ({ isActive }) => {
   return (
     <div className="page_container">
       <h2 className="title">Impact</h2>
-      <p className="description">
+      <p className="description impact-description">
         From steering high-level corporate moves to refining strategic
         initiatives for local ventures, our counsel outpaces traditional
         benchmarks.
@@ -31,7 +31,7 @@ const Impact = ({ isActive }) => {
         <img
           src={ImpactAnimation}
           alt="Tools page Animation"
-          className="animation"
+          className="impact-animation"
         />
         {showTexts && <div className="divisor-line" />}
         {showTexts && (

@@ -19,27 +19,25 @@
 .tools-first-text-container {
   width: 50%;
   position: absolute;
-  top: -10%;
-  right: 22.5%;
+  top: 8%;
+  right: 25%;
 }
 
 .tools-second-text-container {
   width: 50%;
   position: absolute;
-  bottom: -5%;
+  bottom: 19%;
   left: -10%;
 }
 
 .tools-third-text-container {
   width: 50%;
   position: absolute;
-  bottom: -5%;
+  bottom: 19%;
   right: -10%;
 }
 
 .static-anim {
-  /* max-width: 35vw;
-  max-height: 50vh; */
   width: 35vw;
   height: 45vh;
 }
@@ -64,13 +62,13 @@
 
   .tools-second-text-container {
     width: 50%;
-    bottom: -15%;
+    bottom: 10%;
     left: -10%;
   }
 
   .tools-third-text-container {
     width: 50%;
-    bottom: -15%;
+    bottom: 10%;
     right: -10%;
   }
 }

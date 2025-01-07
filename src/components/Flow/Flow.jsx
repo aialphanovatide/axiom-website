@@ -23,8 +23,8 @@ const Flow = ({ isActive }) => {
     <div className="page_container">
       <h2 className="title">Flow</h2>
       <p className="description flow-description">
-        Axiom Dynamics integrates seamlessly into your current frameworks. No
-        massive disruption, just continuous refinement.
+        Our platform, powered by Penelope AI, transforms infinite data into
+        tailored intelligence.
       </p>
       <div className="flow-animation-container">
         {showTexts && (

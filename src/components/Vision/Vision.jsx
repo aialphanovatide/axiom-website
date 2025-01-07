@@ -40,7 +40,7 @@ const Vision = ({ isActive }) => {
         <img
           src={VisionAnimation}
           alt="Vision page Animation"
-          className="animation"
+          className="vision-animation"
         />
         {showTexts && (
           <div className="second-text-container">
