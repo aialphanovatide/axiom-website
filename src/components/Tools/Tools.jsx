@@ -35,11 +35,6 @@ const Tools = ({ isActive }) => {
             />
           </div>
         )}
-        {/* <img
-          src={ToolsAnimation}
-          alt="Tools page Animation"
-          className="animation"
-        /> */}
         <ToolsAnimation isActive={isActive} />
         {showTexts && (
           <div className="tools-second-text-container">

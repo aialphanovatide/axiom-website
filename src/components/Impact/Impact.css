@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes animationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .impact-description {
   width: 25%;
   margin: 0 auto;
@@ -15,10 +24,13 @@
 /* Animations styles */
 
 .impact-animation {
+  display: block;
+  margin: 0 auto;
   max-width: 32.5vw;
   max-height: 45vh;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: contain;
 }
 
 .impact-animation-container {
@@ -49,7 +61,7 @@
 }
 
 .impact-third-text-container {
-  width: 80%;
+  width: 75%;
   position: absolute;
   bottom: -22.5%;
   right: 13.5%;
@@ -66,7 +78,6 @@
 /* Mobile styles */
 
 @media screen and (max-width: 880px) {
-
   .impact-animation-container {
     margin-top: 4.5em;
   }
@@ -86,14 +97,14 @@
 
   .impact-first-text-container {
     bottom: -2.5%;
-    left: -5%;
+    left: -10%;
     width: 50%;
   }
 
   .impact-second-text-container {
     width: 50%;
     bottom: -2.5%;
-    right: -7.5%;
+    right: -10%;
   }
 
   .impact-third-text-container {

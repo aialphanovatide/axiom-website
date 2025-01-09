@@ -45,7 +45,6 @@
 /* Mobile styles */
 
 @media screen and (max-width: 880px) {
-
   .tools-animation-container {
     margin: 2.75rem auto;
   }
@@ -53,7 +52,6 @@
   .tools-description {
     width: 100%;
   }
-
 
   .tools-first-text-container {
     right: 7.5%;
@@ -70,5 +68,13 @@
     width: 50%;
     bottom: 10%;
     right: -10%;
+  }
+}
+
+/* Styles for a width desktop screen */
+
+@media screen and (min-width: 1600px) {
+  .tools-description {
+    margin-bottom: 2em;
   }
 }
